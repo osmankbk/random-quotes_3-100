@@ -40,7 +40,7 @@ const randomQuoteFunction = () => {
     const getQuote = quotes[randomNum];
 //Preventing repetition of quotes by slicing called quote and pushing called quote into an empty array for re-population of the quotes array. 
 	usedQuotes.push(getQuote);
-	quotes.slice(randomNum, 1);
+	quotes.splice(randomNum, 1);
 	if (quotes.length === 0) {
 		quotes = usedQuotes;
 		usedQuotes = []
