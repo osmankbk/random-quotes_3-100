@@ -51,5 +51,5 @@ const randomQuoteFunction = () => {
 button.addEventListener('click', () => {
 	const fullQuote = randomQuoteFunction();
 	quote.innerHTML = fullQuote.quote;
-	author.innerHTML = fullQuote.author;
+	author.innerHTML = '-' +fullQuote.author;
 });
